@@ -1,0 +1,33 @@
+@import 'variables';
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: $bg-color;
+    color: $text-color;
+}
+
+.app-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+
+    header {
+        text-align: center;
+        margin-bottom: 30px;
+
+        h1 {
+            color: $primary-color;
+        }
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        gap: 30px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+}

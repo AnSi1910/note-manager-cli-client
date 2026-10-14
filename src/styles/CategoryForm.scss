@@ -1,0 +1,44 @@
+@import 'variables';
+
+.category-form {
+    background: $card-bg;
+    border: 1px solid $border-color;
+    border-radius: $radius;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+
+    h3 {
+        margin-top: 0;
+        margin-bottom: 15px;
+        color: $text-color;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 12px;
+        border: 1px solid $border-color;
+        border-radius: $radius;
+        font-size: 14px;
+        outline: none;
+
+        &:focus {
+            border-color: $primary-color;
+        }
+    }
+
+    button {
+        background: #10b981;
+        color: white;
+        border: none;
+        padding: 8px 14px;
+        border-radius: $radius;
+        cursor: pointer;
+        font-weight: 600;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+}
